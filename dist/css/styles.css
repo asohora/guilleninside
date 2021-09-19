@@ -12,7 +12,7 @@
 /* DARK #555 */
 /* LIGHT #BBB */
 /* LIGHTER #EEE */
-/* ACCENT #7D3850 */
+/* ACCENT #292961 */
 
 /*---------------
 ***Basic setup***
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-	color: #7D3850;
+	color: #292961;
 }
 
 strong {
@@ -69,7 +69,7 @@ nav {
 
 .nav-button {
 	align-items:center;
-	background-color: #7D3850;
+	background-color: #292961;
 	cursor:pointer;
 	display:flex;
 	justify-content:center;
@@ -155,7 +155,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-	background-color:#7D3850;
+	background-color:#292961;
 }
 
 
@@ -180,7 +180,7 @@ header p {
 	margin-bottom: 1em;
 }
 .header-button {
-	background-color:#7D3850;
+	background-color:#292961;
 	border:none;
 	color:#FCFCFC;
 	cursor:pointer;
@@ -234,7 +234,7 @@ header p {
 }
 
 .logo-display > * {
-	background-color: #7D3850;
+	background-color: #292961;
 	position:absolute;
 }
 
@@ -372,7 +372,7 @@ header p {
 }
 
 .keyboard, .mouse {
-	border: 1vh solid #7D3850;
+	border: 1vh solid #292961;
 	height:100%;
 	width:100%;
 }
@@ -421,6 +421,7 @@ main > * {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
+	min-height: 100vh;
 	padding: 3rem 0;
 }
 
@@ -430,7 +431,7 @@ main h2 {
 
 /* About */
 #about {
-	background-color: #7D3850;
+	background-color: #292961;
 	color: #FCFCFC;
 }
 
@@ -472,7 +473,7 @@ main h2 {
 
 /* Contact */
 #contact {
-	background-color: #7D3850;
+	background-color: #292961;
 	color: #FCFCFC;
 }
 
@@ -592,7 +593,7 @@ form textarea:hover {
 
 
 form .submit-button {
-	background-color: #7D3850;
+	background-color: #292961;
 	border:none;
 	color: #FCFCFC;
 	cursor:pointer;
@@ -645,7 +646,7 @@ form.hidden {
 --------*/
 
 #sent {
-	background-color: #7D3850;
+	background-color: #292961;
 	color: #FCFCFC;
 	padding: .5rem 1rem;
 	position:fixed;
