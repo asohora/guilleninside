@@ -471,12 +471,13 @@ main h2 {
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
+	margin:1em;
 }
 
 .service h3 {
 	font-size: 1.1rem;
 	max-width: 30ch;
-	height: 3em;
+	min-height: 3em;
 }
 
 .service p {
@@ -501,7 +502,7 @@ main h2 {
 	flex-direction:column;
 	flex-wrap:wrap;
 	justify-content:center;
-	min-height: 8em;
+	min-height: 10em;
 }
 
 #contact, #contact p {
