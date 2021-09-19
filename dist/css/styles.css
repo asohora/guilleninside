@@ -639,3 +639,29 @@ form .close-button {
 form.hidden {
 	display:none;
 }
+
+/*---------
+***Sent***
+--------*/
+
+#sent {
+	background-color: #7D3850;
+	color: #FCFCFC;
+	padding: .5rem 1rem;
+	position:fixed;
+	transition: left;
+	bottom:0;
+	left:-100%;
+}
+
+#sent:target {
+	animation: appear 500ms forwards, disappear 1000ms forwards 5000ms;
+}
+
+@keyframes appear {
+	to {left:0}
+}
+
+@keyframes disappear {
+	to {left:-100%}
+}
