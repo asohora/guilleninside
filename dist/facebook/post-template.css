@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+/* WHITE #FCFCFC */
+/* BLACK #000 */
+/* DARKER #333 */
+/* DARK #555 */
+/* LIGHT #BBB */
+/* LIGHTER #EEE */
+/* ACCENT #464691 */
+
+/* Basic setup */
+:root {
+	background-color: #FCFCFC;
+	font-family:"Noto Sans Mono", monospace;
+	font-size: 22px;
+	}
+
+body {
+	display:flex;
+	flex-wrap:wrap;
+	padding: 5vw;
+	align-items:center;
+	justify-content:space-between;
+}
+
+/* Card */
+.card {
+	align-items:center;
+	background-color: #464691;
+	border: 5px solid #000;
+	box-shadow: 2px 2px 8px 0 #000;
+	color: #FCFCFC;
+	display:flex;
+	flex-wrap:wrap;
+	height: 800px;
+	justify-content:space-between;
+	width: 800px;
+}
+
+	/* Text */
+	h1 {
+		flex-basis: 100%;
+		font-size: 2.5rem;
+		text-align:center;
+	}
+
+	p {
+		flex-basis: 50%;
+		hyphens:auto;
+		margin:.5rem;
+		padding:1rem;
+		text-align:justify;
+		webkit-hyphens: auto;
+		-ms-hyphens: auto;
+
+	}
+
+	/* Image */
+	figure {
+		flex-basis: 38%;
+		height: 40%;
+		margin:1.5rem;
+		position:relative;
+
+	}
+
+	figure .img {
+		align-items:center;
+		display:flex;
+		height: 100%;
+		justify-content:center;
+		overflow:hidden;
+		width:100%;
+	}
+
+	figure img {
+		box-shadow: 2px 2px 8px 0 #000;
+		height:90%;
+		object-fit:cover;
+		object-position:50% 50%;
+		width:90%;
+	}
+
+	figcaption {
+		font-size: .7rem;
+		left:50%;
+		padding: .5em;
+		position:absolute;
+		text-align:center;
+		top:100%;
+		transform:translateX(-50%);
+		width: 100%;
+	}
+	
+	/* Footer */
+	footer {
+		background-color: #000;
+		color: #FCFCFC;
+		flex-basis: 100%;
+		text-align:center;
+
+	}
+
+	footer > * {
+		text-align:inherit;
+	}
+
+	/* Menu */
+
+.inputs {
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	padding:1em;
+	text-align:center;
+	width: 300px;
+}
+
+
+input {
+	border:none;
+	cursor:pointer;
+	font-size: 1.3rem;
+	font-weight: 700;
+	height: 2rem;
+	margin-top: 1em;
+	outline:none;
+	overflow:hidden;
+	text-align:center;
+	width: 2rem;
+}
+
+input[type="button"] {
+	background-color: #000;
+	border-radius: 100vh;
+	color: #FCFCFC;
+
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+	background-color: #333;
+}
+
+input[type="button"]:active {
+	background-color: #555;
+}
+
+
+.menu {
+	background-color:#FCFCFC;
+	position:fixed;
+	right:-300px;
+	top:0;
+	transition: right 250ms;
+}
+
+.toggle-button {
+	align-items:center;
+	background-color: #000;
+	color:#FCFCFC;
+	cursor:pointer;
+	display:flex;
+	height: 3rem;
+	justify-content:center;
+	position:absolute;
+	right:100%;
+	top:0;
+	width: 3rem;
+}
+
+.toggle-button-image {
+	background-color:#FCFCFC;
+	height: 10%;
+	position:relative;
+	transition:transform 250ms;
+	width:50%;
+}
+
+.toggle-button-image::before,
+.toggle-button-image::after {
+	content:"";
+	background-color:#FCFCFC;
+	display:block;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+.toggle-button-image::before {
+	bottom: 200%;
+}
+
+.toggle-button-image::after {
+	top: 200%;
+}
+
+.menu.open {
+	position:fixed;
+	right:0;
+}
+
+.menu.open .toggle-button-image {
+	transform: rotate(-90deg);
+}
