@@ -60,6 +60,10 @@ body {
 		-ms-hyphens: auto;
 
 	}
+	
+	strong {
+		font-size: 1.3em;
+	}
 
 	/* Image */
 	figure {
