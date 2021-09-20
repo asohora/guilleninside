@@ -12,7 +12,7 @@
 /* DARK #555 */
 /* LIGHT #BBB */
 /* LIGHTER #EEE */
-/* ACCENT #292961 */
+/* ACCENT #464691 */
 
 /*---------------
 ***Basic setup***
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-	color: #292961;
+	color: #464691;
 }
 
 strong {
@@ -69,7 +69,7 @@ nav {
 
 .nav-button {
 	align-items:center;
-	background-color: #292961;
+	background-color: #464691;
 	cursor:pointer;
 	display:flex;
 	justify-content:center;
@@ -155,7 +155,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-	background-color:#292961;
+	background-color:#464691;
 }
 
 
@@ -180,7 +180,7 @@ header p {
 	margin-bottom: 1em;
 }
 .header-button {
-	background-color:#292961;
+	background-color:#464691;
 	border:none;
 	color:#FCFCFC;
 	cursor:pointer;
@@ -234,7 +234,7 @@ header p {
 }
 
 .logo-display > * {
-	background-color: #292961;
+	background-color: #464691;
 	position:absolute;
 }
 
@@ -372,7 +372,7 @@ header p {
 }
 
 .keyboard, .mouse {
-	border: 1vh solid #292961;
+	border: 1vh solid #464691;
 	height:100%;
 	width:100%;
 }
@@ -431,7 +431,7 @@ main h2 {
 
 /* About */
 #about {
-	background-color: #292961;
+	background-color: #464691;
 	color: #FCFCFC;
 }
 
@@ -487,7 +487,7 @@ main h2 {
 
 /* Contact */
 #contact {
-	background-color: #292961;
+	background-color: #464691;
 	color: #FCFCFC;
 }
 
@@ -615,7 +615,7 @@ form textarea:hover {
 
 
 form .submit-button {
-	background-color: #292961;
+	background-color: #464691;
 	border:none;
 	color: #FCFCFC;
 	cursor:pointer;
@@ -668,7 +668,7 @@ form.hidden {
 --------*/
 
 #sent {
-	background-color: #292961;
+	background-color: #464691;
 	color: #FCFCFC;
 	padding: .5rem 1rem;
 	position:fixed;
