@@ -51,7 +51,7 @@ const changes = {};
 const previousChanges = JSON.parse(localStorage.getItem("changes"));
 
 
-if (previousChanges) {
+if (previousChanges.h1) {
 	// Card
 	previousChanges.color = rgbToHex(previousChanges.color);
 	previousChanges.backgroundColor = rgbToHex(previousChanges.backgroundColor);
@@ -141,5 +141,26 @@ applyButton.addEventListener("click", () => {
 reverseButton.addEventListener("click", () => {
 	localStorage.removeItem("changes");
 	window.location.reload();
+	
+})
+
+
+// To get code
+const getButton = document.getElementById("get-button");
+const codeOutput = document.getElementById("code-output");
+const putButton = document.getElementById("put-button");
+const codeInput = document.getElementById("code-input")
+
+getButton.addEventListener("click", () => {
+	codeOutput.innerText = localStorage.getItem("changes");
+})
+
+putButton.addEventListener("click", () => {
+	if (codeInput.value[0] === "{" && codeInput.value[codeInput.value.length - 1] === "}") {
+		localStorage.setItem("changes",codeInput.value);
+		window.location.reload();
+	} else {
+		alert("Código invalido.");
+	}
 	
 })
