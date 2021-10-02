@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+
 * {
 	box-sizing:0;
 	margin:0;
@@ -7,7 +9,7 @@
 }
 
 :root {
-	font-family: arial, sans-serif;
+	font-family: "Noto Sans Mono", consolas, monospace;
 	font-size: 20px;
 	line-height: min(5vw, 40px);
 }
@@ -24,7 +26,7 @@ body {
 
 p {
 	max-width: 55ch;
-	opacity: .8;
+	opacity: .85;
 	padding: .5em 1.5em;
 }
 strong {
@@ -80,7 +82,7 @@ figcaption {
 	text-align:center;
 	font-size: .85em;
 	line-height: 1.5;
-	opacity: .7;
+	opacity: .85;
 }
 
 h1 {
