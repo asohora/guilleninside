@@ -51,31 +51,35 @@ const changes = {};
 const previousChanges = JSON.parse(localStorage.getItem("changes"));
 
 
-if (previousChanges.h1) {
-	// Card
-	previousChanges.color = rgbToHex(previousChanges.color);
-	previousChanges.backgroundColor = rgbToHex(previousChanges.backgroundColor);
-	h1.innerHTML = previousChanges.h1;
-	p.innerHTML = previousChanges.p;
-	figcaption.innerHTML = previousChanges.figcaption;
-	img.src = previousChanges.imgSrc;
-	card.style.color = previousChanges.color;
-	card.style.backgroundColor = previousChanges.backgroundColor;
-	
-	// Input area
-	h1Input.value = previousChanges.h1;
-	pInput.value = previousChanges.p;
-	figcaptionInput.value = previousChanges.figcaption;
-	imgInput.value = previousChanges.imgSrc;
-	colorInput.value = previousChanges.color;
-	backgroundColorInput.value = previousChanges.backgroundColor;
-	
-	h1InputAvailableCharacters.innerText = h1Input.maxLength - h1Input.value.length;
-	pInputAvailableCharacters.innerText = pInput.maxLength - pInput.value.length;
-	figcaptionInputAvailableCharacters.innerText = figcaptionInput.maxLength - figcaptionInput.value.length;
-	
+if (previousChanges) {
+	try {
+		// Card
+		previousChanges.color = rgbToHex(previousChanges.color);
+		previousChanges.backgroundColor = rgbToHex(previousChanges.backgroundColor);
+		h1.innerHTML = previousChanges.h1;
+		p.innerHTML = previousChanges.p;
+		figcaption.innerHTML = previousChanges.figcaption;
+		img.src = previousChanges.imgSrc;
+		card.style.color = previousChanges.color;
+		card.style.backgroundColor = previousChanges.backgroundColor;
+		
+		// Input area
+		h1Input.value = previousChanges.h1;
+		pInput.value = previousChanges.p;
+		figcaptionInput.value = previousChanges.figcaption;
+		imgInput.value = previousChanges.imgSrc;
+		colorInput.value = previousChanges.color;
+		backgroundColorInput.value = previousChanges.backgroundColor;
+		
+	}
+	catch(err) {
+		localStorage.removeItem("changes");
+	}
 };
 
+	h1InputAvailableCharacters.innerText = h1Input.maxLength - h1Input.value.length;
+		pInputAvailableCharacters.innerText = pInput.maxLength - pInput.value.length;
+		figcaptionInputAvailableCharacters.innerText = figcaptionInput.maxLength - figcaptionInput.value.length;
 
 
 // Available characters
