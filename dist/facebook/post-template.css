@@ -200,4 +200,6 @@ textarea {
 
 details {
 	text-align:center;
+	flex-basis:100%;
+
 }
