@@ -168,3 +168,12 @@ putButton.addEventListener("click", () => {
 	}
 	
 })
+
+
+// Atajos de teclado
+
+window.addEventListener("keyup", function(e){
+	if (e.ctrlKey && e.shiftKey && e.keyCode == 83) {
+	applyButton.click();
+	};
+}) 
