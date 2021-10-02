@@ -11,7 +11,7 @@
 :root {
 	font-family: "Noto Sans Mono", consolas, monospace;
 	font-size: 20px;
-	line-height: min(5vw, 35px);
+	line-height: min(5vw, 40px);
 }
 
 body {
@@ -196,4 +196,8 @@ textarea {
 
 .button:active {
 	background-color: #666;
+}
+
+details {
+	text-align:center;
 }
