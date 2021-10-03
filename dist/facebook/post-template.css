@@ -66,8 +66,7 @@ figure {
 	border-radius: 5%;
 	overflow: hidden;
 	box-shadow: 2px 2px 5px 0 #333;
-
-
+	background-color: #333;
 }
 
 img {
