@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="es-MX" xml:lang="es-MX" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Plantilla de Guillén Inside</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<meta name="description" content="Plantilla de publicaciones de Guillén Inside" />
-		<meta name="author" content="Dan Guillén" />
-		<meta name="robots" content="noindex,nofollow" />
-		<meta property="og:title" content="Plantilla de Guillén Inside" />
-		<meta property="og:description" content="Plantilla de publicaciones de Guillén Inside" />
-		<meta property="og:image" content="https://guilleninside.netlify.app/images/logo1.png" />
-		<meta property="og:image:alt" content="Logo de Guillén Inside" />
-		<link rel="stylesheet" type="text/css" href="./post-template.css" />
-		<link rel="icon" href="../images/logo.ico" />
-		<script defer src="./post-template.js"></script>
-	</head>
-	<body>
-		<div class="card">
-			<h1>Encabezado llamativo</h1>
-			<div class="text">
-				<p>Escribe un párrafo donoso, dechado de ortografía y elegancia, muy lleno de ciencia e ingenio y <strong>ajeno a todo aparato superfluo</strong>: al mismo tiempo, amor de los entendidos y buen amigo de los legos.</p>
-			</div>
-			<figure>
-				<div class="img">
-					<img src="./img.png" alt="" />
-				</div>
-				<figcaption>Descripción de la imagen</figcaption>
-			</figure>
-			<footer>
-				<p><small>Guillén <span lang="en-GB">Inside</span> &#169; 2021</small></p>
-			</footer>
-		</div>
-		<div class="editor">
-			<p><label for="h1-input">Texto del encabezado</label><input id="h1-input" type="text" maxlength="30" placeholder="Escribe aquí el encabezado." title="30 caracteres o menos" /><span class="message h1-message">Caracteres disponibles: <span id="char-h1">30</span>.</span></p>
-			
-			<p><label for="p-input">Texto del párrafo</label><textarea id="p-input" maxlength="260" placeholder="Escribe aquí el párrafo." title="260 caracteres o menos"></textarea><span class="message p-message">Caracteres disponibles: <span id="char-p">260</span>.</span></p>
-			<p><label for="img-input">URL de la imagen</label><input id="img-input" type="text" placeholder="Copia la URL de la imagen que quieres y pégala aquí."/></p>
-			<p><label for="figcaption-input">Descripción de la imagen</label><textarea id="figcaption-input" type="text" maxlength="50" placeholder="Describe la imagen aquí." title="50 caracteres o menos"></textarea><span class="message figcaption-message">Caracteres disponibles: <span id="char-figcaption">50</span>.</span></p>
-			<p><label for="color-input">Color del texto</label><input id="color-input" type="color" value="#000000" placeholder="Color en hexadecimal"/></p>
-			<p><label for="background-color-input">Color del fondo</label><input id="background-color-input" type="color" placeholder="Color en hexadecimal" value="#ffffff" /></p>
-			<a class="button" id="edit-button" href="#">Aplicar</a>
-			<a class="button" id="reverse-button">Restablecer</a>
-		</div>
-		
-		<div class="code">
-			<details open>
-				<summary>Extraer código</summary>
-				<button class="button" type="button" id="get-button">Extraer código</button>
-				<p id="code-output"></p>
-			</details>
-			<details open>
-				<summary>Insertar código</summary>
-				<p><input type="text" id="code-input" placeholder="Pega tu código aquí." aria-label="Insertar código" /></p>
-				<button class="button" type="button" id="put-button">Insertar código</button>
-			</details>
-		</div>
-	</body>
+
+<head>
+  <title>Plantilla de Guillén Inside</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Plantilla de publicaciones de Guillén Inside" />
+  <meta name="author" content="Dan Guillén" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta property="og:title" content="Plantilla de Guillén Inside" />
+  <meta property="og:description" content="Plantilla de publicaciones de Guillén Inside" />
+  <meta property="og:image" content="https://guilleninside.netlify.app/images/logo1.png" />
+  <meta property="og:image:alt" content="Logo de Guillén Inside" />
+  <link rel="stylesheet" type="text/css" href="./post-template.css" />
+  <link rel="icon" href="../images/logo.ico" />
+  <script defer src="./post-template.js"></script>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Encabezado llamativo</h1>
+    <div class="text">
+      <p>Escribe un párrafo donoso, dechado de ortografía y elegancia, muy lleno de ciencia e ingenio y <b>ajeno a todo aparato superfluo</b>: al mismo tiempo, amor de los entendidos y buen amigo de los legos.</p>
+    </div>
+    <figure>
+      <div class="img">
+        <img src="./img.png" alt="" />
+      </div>
+      <figcaption>Descripción de la imagen</figcaption>
+    </figure>
+    <footer>
+      <p>
+        <small>Guillén <span lang="en-GB">Inside</span> &#169; 2021</small>
+      </p>
+    </footer>
+  </div>
+  <div class="editor">
+    <p>
+      <label for="h1-input">Texto del encabezado</label><input id="h1-input" type="text" maxlength="30"
+        placeholder="Escribe aquí el encabezado." title="30 caracteres o menos" /><span
+        class="message h1-message">Caracteres disponibles: <span id="char-h1">30</span>.</span>
+    </p>
+
+    <p>
+      <label for="p-input">Texto del párrafo</label><textarea id="p-input" maxlength="260"
+        placeholder="Escribe aquí el párrafo." title="260 caracteres o menos"></textarea><span
+        class="message p-message">Caracteres disponibles: <span id="char-p">260</span>.</span>
+    </p>
+    <p>
+      <label for="img-input">URL de la imagen</label><input id="img-input" type="text"
+        placeholder="Copia la URL de la imagen que quieres y pégala aquí." />
+    </p>
+    <p>
+      <label for="figcaption-input">Descripción de la imagen</label><textarea id="figcaption-input" type="text"
+        maxlength="50" placeholder="Describe la imagen aquí." title="50 caracteres o menos"></textarea><span
+        class="message figcaption-message">Caracteres disponibles: <span id="char-figcaption">50</span>.</span>
+    </p>
+    <p>
+      <label for="color-input">Color del texto</label><input id="color-input" type="color" value="#000000"
+        placeholder="Color en hexadecimal" />
+    </p>
+    <p>
+      <label for="background-color-input">Color del fondo</label><input id="background-color-input" type="color"
+        placeholder="Color en hexadecimal" value="#ffffff" />
+    </p>
+    <a class="button" id="reverse-button">Restablecer</a>
+  </div>
+
+  <div class="code hidden">
+    <button class="menu-button">Código</button>
+    <div class="code-top">
+      <button class="button" type="button" id="get-button">Extraer código</button>
+    </div>
+    <div class="code-bottom">
+      <input type="text" id="code-input" placeholder="Pega tu código aquí." aria-label="Insertar código" />
+      <button class="button" type="button" id="put-button">
+        Insertar código
+      </button>
+    </div>
+
+  </div>
+</body>
+
 </html>
